@@ -1,0 +1,14 @@
+.map{
+    width: 800px;
+    height: 600px;
+    background: #ddd;
+    position: relative;
+}
+
+.snake,.food{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: red;
+    border-radius: 5px;
+}
