@@ -11,24 +11,14 @@
             background: #ddd;
         }
     </style>
+    <script src="js/snake_canvas.js"></script>
 </head>
 
 <body>
     <canvas id="map"></canvas>
-
     <script>
-        function require(exports) {
-            exports = {};
-            exports.b = "111111";
-
-            return exports;
-        }
-
-        var b = 22;
-        var a = require(b);
-        console.log(b);
-        console.log(a);
-
+        var game = new Game("#map");
+        game.start();
     </script>
 </body>
 
