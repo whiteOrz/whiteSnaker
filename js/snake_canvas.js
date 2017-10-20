@@ -128,6 +128,7 @@ Game.prototype.move = function () {
 Game.prototype.food = function () {
     var x = Math.ceil(Math.random() * 40) * UNIT;
     var y = Math.ceil(Math.random() * 30) * UNIT;
+    this.ctx.fillStyle = "red";
     this.ctx.fillRect(x, y, UNIT, UNIT);
     this.fx = x;
     this.fy = y;
